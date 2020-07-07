@@ -2,7 +2,7 @@
 	class="viewPadding" controllerName="gdsd.PlacesofCareClaims.controller.LandingPage">
 	<Dialog>
 		<beginButton>
-			<Button text= "Cancel" press="onCancel" type="Reject"/>
+			<Button text="Cancel" press="onCancel" type="Reject"/>
 		</beginButton>
 		<endButton>
 			<Button text= "Save" press="onAddRegisterItem" type="Accept"/>
