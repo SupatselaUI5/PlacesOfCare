@@ -1,0 +1,66 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Dialog>
+		<beginButton>
+			<Button text="Cancel" press="onCancel" type="Reject"/>
+		</beginButton>
+		<endButton>
+			<Button text="Save" press="onAddSummaryofStaffItem" type="Accept"/>
+		</endButton>
+		<content>
+			<sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" layout="ResponsiveGridLayout">
+				<sap.ui.layout.form:content>
+					<core:Title text="Summary of Permanent Staff Breakdown" icon="sap-icon://company-view"/>
+					<Label text="Surname &amp; Initials/ File Number"/>
+					<Input width="100%" id="ssSurname"/>
+					<Label text="ID Number"/>
+					<Input width="100%" id="ssID"/>
+					<Label xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" text="Gender"/>
+					<ComboBox xmlns="sap.m" id="ssGender">
+						<items>
+							<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Male" id="item24"/>
+							<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Female" id="item25"/>
+						</items>
+					</ComboBox>
+					<Label xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" text="Race"/>
+					<ComboBox xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m">
+						<items>
+							<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Black" id="item24_copy"/>
+							<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="White" id="item25_copy"/>
+							<core:Item xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:core="sap.ui.core" key="item-2-key" text="Coloured" id="item25_copy2"/>
+							<core:Item xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:core="sap.ui.core" key="item-2-key" text="Asian" id="item25_copy3"/>
+						</items>
+					</ComboBox>
+					<Label xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" text="Disabled"/>
+					<ComboBox xmlns="sap.m">
+						<items>
+							<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="No" id="item70"/>
+							<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Yes" id="item71"/>
+						</items>
+					</ComboBox>
+					<Label xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" text="Description of Disability"/>
+					<Input width="100%"/>
+					<Label xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" text="Designation"/>
+					<Input xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" width="100%"/>
+					<Label xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" text="Training Received"/>
+					<ComboBox xmlns="sap.m">
+						<items>
+							<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Yes" id="item174"/>
+							<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="No" id="item175"/>
+						</items>
+					</ComboBox>
+					<Label xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" text="Specify Training Received"/>
+					<Input xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" width="100%"/>
+					<Label xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" text="Subsidized"/>
+					<ComboBox xmlns="sap.m">
+						<items>
+							<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Yes" id="item312"/>
+							<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="No" id="item313"/>
+						</items>
+					</ComboBox>
+					<Label xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" text="Gross Monthly Salary Specify"/>
+					<Input xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" width="100%"/>
+				</sap.ui.layout.form:content>
+			</sap.ui.layout.form:SimpleForm>
+		</content>
+	</Dialog>
+</core:FragmentDefinition>

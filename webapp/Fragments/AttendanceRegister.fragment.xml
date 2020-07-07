@@ -1,0 +1,33 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns:u="sap.ui.unified"
+	class="viewPadding" controllerName="gdsd.PlacesofCareClaims.controller.LandingPage">
+	<Dialog>
+		<beginButton>
+			<Button text="Cancel" press="onCancel" type="Reject"/>
+		</beginButton>
+		<endButton>
+			<Button text="Save" press="onAddRegisterItem" type="Accept"/>
+		</endButton>
+		<content>
+			<sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" layout="ResponsiveGridLayout">
+				<sap.ui.layout.form:content>
+					<core:Title text="Attendance Register" icon="sap-icon://account"/>
+					<Label text="Surname &amp; Initials"/>
+					<Input width="100%" id="arSurname"/>
+					<Label text="Age"/>
+					<Input width="100%" id="arAge"/>
+					<Label xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" text="Attendance Days"/>
+					<l:VerticalLayout>
+						<u:Calendar id="calendar" select="handleCalendarSelect" intervalSelection="false" singleSelection="false"/>
+						<Button press="handleRemoveSelection" text="Remove All Selected Dates"/>
+						<List id="selectedDatesList" class="labelMarginLeft" noDataText="No Dates Selected" headerText="Selected Dates (yyyy-mm-dd)"
+							items="{path:'/selectedDates'}">
+							<StandardListItem title="{Date}"/>
+						</List>
+					</l:VerticalLayout>
+					<Label xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" text="Total Days Attended"/>
+					<Input width="100%"/>
+				</sap.ui.layout.form:content>
+			</sap.ui.layout.form:SimpleForm>
+		</content>
+	</Dialog>
+</core:FragmentDefinition>
