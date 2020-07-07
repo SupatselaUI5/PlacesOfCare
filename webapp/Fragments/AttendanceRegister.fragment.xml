@@ -2,10 +2,10 @@
 	class="viewPadding" controllerName="gdsd.PlacesofCareClaims.controller.LandingPage">
 	<Dialog>
 		<beginButton>
-			<Button text="Cancel" press="onCancel" type="Reject"/>
+			<Button text= "Cancel" press="onCancel" type="Reject"/>
 		</beginButton>
 		<endButton>
-			<Button text="Save" press="onAddRegisterItem" type="Accept"/>
+			<Button text= "Save" press="onAddRegisterItem" type="Accept"/>
 		</endButton>
 		<content>
 			<sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" layout="ResponsiveGridLayout">
